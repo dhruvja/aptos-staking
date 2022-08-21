@@ -74,9 +74,5 @@ module SimpleStaking::Staking {
         unstake(&staker);
         assert!(coin::balance<aptos_coin::AptosCoin>(staker_addr) == 200, EINVALID_BALANCE);
         assert!(coin::balance<aptos_coin::AptosCoin>(resource_account) == 0, EINVALID_BALANCE);
-
     }
-
-
-
 }
