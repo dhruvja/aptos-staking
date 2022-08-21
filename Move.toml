@@ -1,0 +1,11 @@
+[package]
+name = 'staking'
+version = '0.0.1'
+
+[addresses]
+AptosFramework = "0x1"
+SimpleStaking = "B6CF5B344C713D697F4BB3AF1255A5B99E27A292E9DA756FEFE1C854AEB4BAF8"
+CoreResources = "0xA550C18"
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework/", rev="devnet"}
